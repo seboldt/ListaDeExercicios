@@ -8,5 +8,7 @@ for x in range(0, 5):
 
 pessoas.reverse()
 
+print(pessoas)
+
 for pessoa in pessoas:
     print(f'Idade {pessoa[0]} - Altura: {pessoa[1]}')

@@ -1,22 +1,21 @@
 media = []
-nota = []
 
-for x in range(1, 11):
-    print(f'Notas aluno {x} \n')
-    n1 = float(input('Informe a nota do Primeiro bimestre \n'))
-    n2 = float(input('Informe a nota do Segundo bimestre \n'))
-    n3 = float(input('Informe a nota do Terceiro bimestre \n'))
-    n4 = float(input('Informe a nota do Quarto bimestre \n'))
-    media.append((n1 + n2 + n3 + n4) / 4)
+for x in range(0, 10):
+    print(f'Aluno: {x} \n')
+    nota = []
+    for i in range(0, 4):
+        nota.append(int(input(f'nota {i} bimestre \n')))
 
-alunos = 0
+    media.append(nota)
 
-for i in range(0, 10):
-    if media[i] >= 7:
-        alunos += 1
+aluno = 0
 
+for nota in media:
+    m = (nota[0] + nota[1] + nota[2] + nota[3]) / 4
+    print(f'Média: {m}')
+    if m >= 7:
+        aluno += 1
 
-print(f'{alunos} Alunos aprovados ')
-
+print(f'Alunos na média: {aluno}')
 
 
